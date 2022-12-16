@@ -51,11 +51,12 @@
 
 .dropdown {
   position: absolute;
-  background-color: #111418;
+  background-color: #22262f;
   width: 550px;
   padding: 7px 12px;
   border-radius: 5px;
   transition: 0.2s linear;
+  z-index: 100;
 }
 
 .active {
@@ -105,8 +106,16 @@ ul li:hover {
   font-size: 90px;
 }
 
+@media (max-width: 870px) {
+  .dropdown {
+    width: 250px;
+  }
+}
 @media (max-width: 546px) {
   .header_container_input {
+    width: 180px;
+  }
+  .dropdown {
     width: 180px;
   }
 }

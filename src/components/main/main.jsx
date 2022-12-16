@@ -104,7 +104,7 @@ const Main = () => {
                                 isFetching ? (
                                     <Loader/>
                                 ) : (
-                                    Object.values(setUserRepos)?.map(userss => <Repos userss={userss}/>)
+                                    Object.values(setUserRepos)?.map((userss,index) => <Repos key={index} userss={userss}/>)
                                 )
                             }
 

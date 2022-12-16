@@ -2,11 +2,10 @@ import React from 'react';
 import './sidebar.scss';
 import ReposList from "./reposList";
 import {useSelector} from "react-redux";
-import Loader from "../loader/loader";
 
 const Sidebar = () => {
-    const userRepos= useSelector(state => state.setUser.repos);
-    const isFetching = useSelector(state => state.setUser.isFetching);
+    const userRepos = useSelector(state => state.setUser.repos);
+    const foundRepos = useSelector(state => state.setFoundUser.repos);
 
     return (
         <div className='sidebar'>
@@ -14,16 +13,17 @@ const Sidebar = () => {
                 <p>Top Repositories</p>
             </div>
             {
-                isFetching ? (
-                    <Loader/>
-                ) :  (
+                (foundRepos && foundRepos?.length !== 0) ? (
+                    foundRepos?.map(repo => (
+                        <ReposList repo={repo}/>
+                    ))
+                ) : (
                     userRepos?.map(repo => (
                         <ReposList repo={repo}/>
                     ))
                 )
             }
         </div>
-    );
-};
-
+    )
+}
 export default Sidebar;

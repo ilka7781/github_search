@@ -8,7 +8,7 @@ import {BsDot} from "@react-icons/all-files/bs/BsDot";
 import {MdLocationPin} from "react-icons/md";
 import {HiOutlineBuildingOffice2} from "react-icons/hi2";
 import {setCurrentPageAction} from "../reducers/reducers";
-import {getTopReposFoundUser, setFoundUserRequest, sortRequestApi} from "../API/api";
+import {setFoundUserRequest, sortRequestApi} from "../API/api";
 import {createPages} from "../utils.js/pagesCreator";
 
 

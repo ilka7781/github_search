@@ -5,7 +5,7 @@ const ReposList = ({repo}) => {
     return (
             <div className="sidebar_content">
                 <div className='sidebar_content_repos'>
-                    <p><a href={repo?.html_url}><RiGitRepositoryFill/>{repo?.name}</a></p>
+                    <p><a target='_blank' href={repo?.html_url}><RiGitRepositoryFill/>{repo?.name}</a></p>
                 </div>
             </div>
     );

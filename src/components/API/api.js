@@ -12,7 +12,7 @@ export const base = 'https://api.github.com/';
 
 export const getUserRequest =(currentPage, perPage, sort)=>{
     return async (dispatch) =>{
-        dispatch(setIsFetchingAction(true));
+        dispatch(setIsFetchingAction(false));
         const response = await axios.get(`${base}users/ilka7781`);
         const responseRepos = await axios.get(`${base}users/ilka7781/repos?page=${currentPage}&per_page=${perPage}&sort=${sort}`);
         dispatch(getUsersAction(response.data));
