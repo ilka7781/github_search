@@ -1,0 +1,127 @@
+.userDetails {
+  grid-area: c;
+  background-color: #050809;
+  padding-top: 50px;
+}
+.userDetails_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 100px;
+}
+
+.userAvatar .userAvatarImg {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
+.userAvatar_name {
+  color: white;
+  margin-top: 25px;
+  font-size: 24px;
+}
+.userAvatar_login {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #c9d1d9;
+  font-weight: 300;
+}
+.userAvatar_bio {
+  color: #c9d1d9;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.2em;
+}
+.userAvatar_followers {
+  display: flex;
+  color: #c9d1d9;
+  gap: 10px;
+  margin-top: 15px;
+}
+.userAvatar_followers svg {
+  color: white;
+}
+.userAvatar_location {
+  margin-top: 15px;
+  color: #c9d1d9;
+}
+.userAvatar_location p {
+  margin-bottom: 5px;
+}
+
+.userRepos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.userRepos_sort_block {
+  display: flex;
+  justify-content: center;
+  grid-column: span 2;
+  margin-bottom: 20px;
+  gap: 2%;
+}
+.userRepos_sort_block_btn {
+  color: white;
+  padding: 7px 12px;
+  background-color: #238636;
+  border: none;
+  border-radius: 3px;
+  width: max-content;
+}
+.userRepos_sort_block_btn:hover {
+  cursor: pointer;
+  background-color: #2ca243;
+  transition: 0.2s linear;
+}
+
+.userDetailsCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: span 2;
+  grid-gap: 20px;
+}
+
+.bold_count {
+  font-weight: bold;
+}
+
+.pages {
+  margin: 20px 0;
+}
+.pages .page {
+  border: 1px solid #c9d1d9;
+  border-radius: 100%;
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: #c9d1d9;
+}
+.pages .page:hover {
+  cursor: pointer;
+}
+.pages .currentPage {
+  border: 2px solid #c9d1d9;
+  font-weight: bold;
+}
+
+@media (max-width: 1254px) {
+  .userDetails_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .userAvatar {
+    justify-content: center;
+  }
+}
+@media (max-width: 566px) {
+  .userDetailsCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: span 2;
+    grid-gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=userDetails.css.map */

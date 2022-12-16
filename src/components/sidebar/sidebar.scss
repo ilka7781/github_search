@@ -1,0 +1,41 @@
+.sidebar{
+  grid-area: b;
+  background-color: #111418;
+  height: 100vh;
+  position: sticky;
+  border-right: 1px solid #30363d;
+  padding: 50px 30px;
+  &_content{
+    width: 90%;
+    &_header{
+      & p{
+        color: #c9d1d9;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+    &_repos{
+      & p{
+        color: #c9d1d9;
+        margin-top: 20px;
+      }
+      &:hover{
+        cursor: pointer;
+        transition: 0.2s linear;
+        opacity: 0.3;
+      }
+      & a{
+        text-decoration: none;
+        color: #c9d1d9;
+        & svg{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .sidebar{
+   display: none;
+  }
+}

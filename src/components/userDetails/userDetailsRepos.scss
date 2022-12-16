@@ -1,4 +1,4 @@
-.userContainerRepo{
+.containerRepo{
   color: #8b949e;
   padding: 15px;
   border: 1px solid #30363d;
@@ -11,35 +11,35 @@
     }
   }
 }
-.userRepo_header_visibility{
+.repo_header_visibility{
   font-size: 14px;
   padding: 6px;
   border: 1px solid gray;
   border-radius: 10px;
 }
-.userRepo div{
+.repo div{
   margin-bottom: 10px;
 }
-.userRepo_header{
+.repo_header{
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.userRepo_header_header_name {
+.repo_header_name {
   color: white;
   font-size: 14px;
   font-weight: 500;
 }
-.userCards_container_description{
+.cards_container_description{
   font-size: 14px;
   line-height: 1.5em;
 }
-.userCards_footer{
+.cards_footer{
   display: flex;
   align-items: center;
 
 }
-.userCards_footer_lang{
+.cards_footer_lang{
   font-size: 14px;
   margin-right: 8px;
   &_color{
@@ -53,7 +53,7 @@
     border-radius: 50%;
   }
 }
-.userCards_footer_stars{
+.cards_footer_stars{
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -62,12 +62,6 @@
     font-size: 19px;
   }
 }
-.userCards_footer_created{
+.cards_footer_created{
   font-size: 14px;
-}
-
-@media (max-width: 546px){
-  .userContainerRepo{
-    margin-top: 20px;
-  }
 }

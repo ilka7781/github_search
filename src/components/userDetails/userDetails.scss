@@ -1,4 +1,4 @@
-.mainUserDetails{
+.userDetails{
   grid-area: c;
   background-color: #050809;
   padding-top: 50px;
@@ -9,10 +9,14 @@
     gap: 100px;
   }
 }
-.mainUserAvatar{
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
+.userAvatar{
+
+  .userAvatarImg{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+  }
+
   &_name{
     color: white;
     margin-top: 25px;
@@ -48,7 +52,7 @@
     }
   }
 }
-.mainUserRepos{
+.userRepos{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 10px;
@@ -73,7 +77,8 @@
     }
   }
 }
-.mainUserReposCards{
+
+.userDetailsCards{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-column: span 2;
@@ -99,18 +104,21 @@
     font-weight: bold;
   }
 }
-
 @media (max-width: 1254px){
-  .mainUserDetails_container{
+  .userDetails_container{
     flex-direction: column;
-    gap: 200px;
     justify-content: center;
     align-items: center;
   }
+  .userAvatar{
+    justify-content: center;
+  }
 }
 @media (max-width: 566px){
-  .mainUserReposCards{
+  .userDetailsCards{
+    display: grid;
     grid-template-columns: 1fr;
     grid-column: span 2;
+    grid-gap: 20px;
   }
 }

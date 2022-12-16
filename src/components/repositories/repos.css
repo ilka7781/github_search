@@ -1,0 +1,83 @@
+.userContainerRepo {
+  color: #8b949e;
+  padding: 15px;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+}
+.userContainerRepo a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+.userContainerRepo a:hover {
+  border-bottom: 1px solid #58a6ff;
+}
+
+.userRepo_header_visibility {
+  font-size: 14px;
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.userRepo div {
+  margin-bottom: 10px;
+}
+
+.userRepo_header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.userRepo_header_header_name {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.userCards_container_description {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.userCards_footer {
+  display: flex;
+  align-items: center;
+}
+
+.userCards_footer_lang {
+  font-size: 14px;
+  margin-right: 8px;
+}
+.userCards_footer_lang_color {
+  position: relative;
+  top: 2px;
+  margin-right: 7px;
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  border: 7px solid #f1e05a;
+  border-radius: 50%;
+}
+
+.userCards_footer_stars {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.userCards_footer_stars svg {
+  font-size: 19px;
+}
+
+.userCards_footer_created {
+  font-size: 14px;
+}
+
+@media (max-width: 546px) {
+  .userContainerRepo {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=repos.css.map */
